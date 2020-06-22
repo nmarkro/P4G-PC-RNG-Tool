@@ -14,7 +14,6 @@
         <CheatEntry>
           <ID>6</ID>
           <Description>"RNG1 Seed 1"</Description>
-          <LastState Value="C2F4CF35" RealAddress="30823410"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>21e9e534</Address>
@@ -25,7 +24,6 @@
         <CheatEntry>
           <ID>7</ID>
           <Description>"RNG1 Seed 2"</Description>
-          <LastState Value="AFC4E7CF" RealAddress="30823404"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>21e9e538</Address>
@@ -45,7 +43,6 @@
         <CheatEntry>
           <ID>11</ID>
           <Description>"RNG2 Index"</Description>
-          <LastState Value="00000270" RealAddress="05E95180"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>"P4G.exe"+5a95180</Address>
@@ -53,7 +50,6 @@
         <CheatEntry>
           <ID>13</ID>
           <Description>"RNG2 Seed"</Description>
-          <LastState Value="9E98C142" RealAddress="00C562A0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>05e95180</Address>
@@ -67,13 +63,12 @@
       <ID>16</ID>
       <Description>"Misc"</Description>
       <Options moHideChildren="1"/>
-      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <LastState Value="" RealAddress="00000000"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>15</ID>
           <Description>"Game Time"</Description>
-          <LastState Value="400368" RealAddress="21EC8C84"/>
           <VariableType>4 Bytes</VariableType>
           <Address>P4G.exe+21AC8C84</Address>
         </CheatEntry>
@@ -81,13 +76,12 @@
           <ID>8</ID>
           <Description>"Pointers"</Description>
           <Options moHideChildren="1"/>
-          <LastState Value="" Activated="1" RealAddress="00000000"/>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
               <ID>1</ID>
               <Description>"Start RNG array PTR"</Description>
-              <LastState Value="308233E0" RealAddress="21E9E530"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>21E9E530</Address>
@@ -95,7 +89,6 @@
             <CheatEntry>
               <ID>2</ID>
               <Description>"RNG index 1 PTR"</Description>
-              <LastState Value="30823410" RealAddress="21E9E534"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>21E9E534</Address>
@@ -103,7 +96,6 @@
             <CheatEntry>
               <ID>3</ID>
               <Description>"RNG index 2 PTR"</Description>
-              <LastState Value="30823404" RealAddress="21E9E538"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>21E9E538</Address>
@@ -111,7 +103,6 @@
             <CheatEntry>
               <ID>4</ID>
               <Description>"End RNG array PTR"</Description>
-              <LastState Value="3082345C" RealAddress="21E9E53C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>21E9E53C</Address>
@@ -119,7 +110,6 @@
             <CheatEntry>
               <ID>10</ID>
               <Description>"Start RNG2 Array"</Description>
-              <LastState Value="9A319039" RealAddress="00C56030"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>P4G.exe+856030</Address>
@@ -127,7 +117,6 @@
             <CheatEntry>
               <ID>24</ID>
               <Description>"Start of skill array"</Description>
-              <LastState Value="14" RealAddress="4E861CB0"/>
               <VariableType>2 Bytes</VariableType>
               <Address>"P4G.exe"+04A34210</Address>
               <Offsets>
@@ -145,441 +134,441 @@
   </CheatEntries>
   <UserdefinedSymbols/>
   <LuaScript>local skills = {
-	[0x0001]={["name"]="Agi", ["rank"]=1},
-	[0x0002]={["name"]="Agilao", ["rank"]=3},
-	[0x0003]={["name"]="Agidyne", ["rank"]=5},
-	[0x0004]={["name"]="Maragi", ["rank"]=2},
-	[0x0005]={["name"]="Maragion", ["rank"]=4},
-	[0x0006]={["name"]="Maragidyne", ["rank"]=6},
-	[0x0007]={["name"]="Peominence", ["rank"]=0},
-	[0x0008]={["name"]="Ragnarok", ["rank"]=0},
-	[0x0009]={["name"]="Immortal Flame", ["rank"]=0},
-	[0x000A]={["name"]="Tiny Soul Tomato", ["rank"]=0},
-	[0x000B]={["name"]="Tetracorn", ["rank"]=0},
-	[0x000C]={["name"]="Run Amok", ["rank"]=0},
-	[0x000D]={["name"]="Shake Off", ["rank"]=0},
-	[0x000E]={["name"]="Garu", ["rank"]=1},
-	[0x000F]={["name"]="Garula", ["rank"]=3},
-	[0x0010]={["name"]="Garudyne", ["rank"]=5},
-	[0x0011]={["name"]="Magaru", ["rank"]=2},
-	[0x0012]={["name"]="Magarula", ["rank"]=4},
-	[0x0013]={["name"]="Magarudyne", ["rank"]=6},
-	[0x0014]={["name"]="Divine Vacuum", ["rank"]=0},
-	[0x0015]={["name"]="Panta Rhei", ["rank"]=0},
-	[0x0016]={["name"]="Hiranya Cabbage", ["rank"]=0},
-	[0x0017]={["name"]="Cry of Denial", ["rank"]=0},
-	[0x0018]={["name"]="Hot Lightning", ["rank"]=0},
-	[0x0019]={["name"]="Draining Fog", ["rank"]=0},
-	[0x001A]={["name"]="Bufu", ["rank"]=1},
-	[0x001B]={["name"]="Bufula", ["rank"]=3},
-	[0x001C]={["name"]="Bufudyne", ["rank"]=5},
-	[0x001D]={["name"]="Mabufu", ["rank"]=2},
-	[0x001E]={["name"]="Mabufula", ["rank"]=4},
-	[0x001F]={["name"]="Mabufudyne", ["rank"]=6},
-	[0x0020]={["name"]="Cocytus Pain", ["rank"]=0},
-	[0x0021]={["name"]="Niflheim", ["rank"]=0},
-	[0x0022]={["name"]="Bloody Rain", ["rank"]=0},
-	[0x0023]={["name"]="Red Paprika", ["rank"]=0},
-	[0x0024]={["name"]="Enclosure Shell", ["rank"]=0},
-	[0x0025]={["name"]="Hot Lightning", ["rank"]=0},
-	[0x0026]={["name"]="Shell of Denial", ["rank"]=0},
-	[0x0027]={["name"]="Zio", ["rank"]=1},
-	[0x0028]={["name"]="Zionga", ["rank"]=3},
-	[0x0029]={["name"]="Ziodyne", ["rank"]=5},
-	[0x002A]={["name"]="Mazio", ["rank"]=2},
-	[0x002B]={["name"]="Mazionga", ["rank"]=4},
-	[0x002C]={["name"]="Maziodyne", ["rank"]=6},
-	[0x002D]={["name"]="Jihad", ["rank"]=0},
-	[0x002E]={["name"]="Thunder Reign", ["rank"]=0},
-	[0x002F]={["name"]="Bead Melon", ["rank"]=0},
-	[0x0030]={["name"]="Mid Soul Tomato", ["rank"]=0},
-	[0x0031]={["name"]="Big Soul Tomato", ["rank"]=0},
-	[0x0032]={["name"]="Makaracorn", ["rank"]=0},
-	[0x0033]={["name"]="Megido", ["rank"]=3},
-	[0x0034]={["name"]="Megidola", ["rank"]=6},
-	[0x0035]={["name"]="Megidolaon", ["rank"]=8},
-	[0x0036]={["name"]="Last Resort", ["rank"]=0},
-	[0x0037]={["name"]="Black Viper", ["rank"]=0},
-	[0x0038]={["name"]="Morning Star", ["rank"]=0},
-	[0x0039]={["name"]="White Paprika", ["rank"]=0},
-	[0x003A]={["name"]="Blue Paprika", ["rank"]=0},
-	[0x003B]={["name"]="Green Paprika", ["rank"]=0},
-	[0x003C]={["name"]="Blank", ["rank"]=0},
-	[0x003D]={["name"]="Hama", ["rank"]=2},
-	[0x003E]={["name"]="Hamaon", ["rank"]=5},
-	[0x003F]={["name"]="Mahama", ["rank"]=3},
-	[0x0040]={["name"]="Mahamaon", ["rank"]=6},
-	[0x0041]={["name"]="Eternal White", ["rank"]=0},
-	[0x0042]={["name"]="God's Judgment", ["rank"]=8},
-	[0x0043]={["name"]="Samsara", ["rank"]=0},
-	[0x0044]={["name"]="Blank", ["rank"]=0},
-	[0x0045]={["name"]="Blank", ["rank"]=0},
-	[0x0046]={["name"]="Blank", ["rank"]=0},
-	[0x0047]={["name"]="Blank", ["rank"]=0},
-	[0x0048]={["name"]="Mudo", ["rank"]=2},
-	[0x0049]={["name"]="Mudoon", ["rank"]=5},
-	[0x004A]={["name"]="Mamudo", ["rank"]=3},
-	[0x004B]={["name"]="Mamudoon", ["rank"]=6},
-	[0x004C]={["name"]="Eternal Black", ["rank"]=0},
-	[0x004D]={["name"]="Hell's Judgment", ["rank"]=8},
-	[0x004E]={["name"]="Die for Me!", ["rank"]=0},
-	[0x004F]={["name"]="Blank", ["rank"]=0},
-	[0x0050]={["name"]="Blank", ["rank"]=0},
-	[0x0051]={["name"]="Blank", ["rank"]=0},
-	[0x0052]={["name"]="Blank", ["rank"]=0},
-	[0x0053]={["name"]="Pulinpa", ["rank"]=1},
-	[0x0054]={["name"]="Tentarafoo", ["rank"]=3},
-	[0x0055]={["name"]="Evil Touch", ["rank"]=1},
-	[0x0056]={["name"]="Evil Smile", ["rank"]=3},
-	[0x0057]={["name"]="Ghastly Wail", ["rank"]=6},
-	[0x0058]={["name"]="Balzac", ["rank"]=1},
-	[0x0059]={["name"]="Valiant Dance", ["rank"]=3},
-	[0x005A]={["name"]="Poisma", ["rank"]=1},
-	[0x005B]={["name"]="Poison Mist", ["rank"]=3},
-	[0x005C]={["name"]="Soul Break", ["rank"]=1},
-	[0x005D]={["name"]="Anima Freeze", ["rank"]=3},
-	[0x005E]={["name"]="Enervation", ["rank"]=1},
-	[0x005F]={["name"]="Old One", ["rank"]=3},
-	[0x0060]={["name"]="Galgalim Eyes", ["rank"]=0},
-	[0x0061]={["name"]="Makajam", ["rank"]=1},
-	[0x0062]={["name"]="Foolish Whisper", ["rank"]=3},
-	[0x0063]={["name"]="Foul Breath", ["rank"]=2},
-	[0x0064]={["name"]="Stagnant Air", ["rank"]=4},
-	[0x0065]={["name"]="Life Drain", ["rank"]=2},
-	[0x0066]={["name"]="Spirit Drain", ["rank"]=2},
-	[0x0067]={["name"]="Life Leech", ["rank"]=0},
-	[0x0068]={["name"]="Spirit Leech", ["rank"]=0},
-	[0x0069]={["name"]="Judgement", ["rank"]=0},
-	[0x006A]={["name"]="Balzac", ["rank"]=0},
-	[0x006B]={["name"]="Last Resort", ["rank"]=0},
-	[0x006C]={["name"]="Last Resort", ["rank"]=0},
-	[0x006D]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x006E]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x006F]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0070]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0071]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0072]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0073]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0074]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0075]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x0076]={["name"]="Blank", ["rank"]=0},
-	[0x0077]={["name"]="Elemental Break", ["rank"]=0},
-	[0x0078]={["name"]="Bash", ["rank"]=1},
-	[0x0079]={["name"]="Cleave", ["rank"]=1},
-	[0x007A]={["name"]="Assault Drive", ["rank"]=3},
-	[0x007B]={["name"]="Sonic Punch", ["rank"]=2},
-	[0x007C]={["name"]="Double Fangs", ["rank"]=2},
-	[0x007D]={["name"]="Kill Rush", ["rank"]=3},
-	[0x007E]={["name"]="Swift Strike", ["rank"]=3},
-	[0x007F]={["name"]="Twin Shot", ["rank"]=3},
-	[0x0080]={["name"]="Fatal End", ["rank"]=4},
-	[0x0081]={["name"]="Mighty Swing", ["rank"]=5},
-	[0x0082]={["name"]="Torrent Shot", ["rank"]=5},
-	[0x0083]={["name"]="Heat Wave", ["rank"]=5},
-	[0x0084]={["name"]="Gigantic Fist", ["rank"]=6},
-	[0x0085]={["name"]="Blade of Fury", ["rank"]=5},
-	[0x0086]={["name"]="Deathbound", ["rank"]=6},
-	[0x0087]={["name"]="Arrow Rain", ["rank"]=6},
-	[0x0088]={["name"]="Akasha Arts", ["rank"]=7},
-	[0x0089]={["name"]="Tempest Slash", ["rank"]=6},
-	[0x008A]={["name"]="Heaven's Blade", ["rank"]=0},
-	[0x008B]={["name"]="Myriad Arrows", ["rank"]=7},
-	[0x008C]={["name"]="God's Hand", ["rank"]=8},
-	[0x008D]={["name"]="Pralaya", ["rank"]=0},
-	[0x008E]={["name"]="Primal Force", ["rank"]=8},
-	[0x008F]={["name"]="Vorpal Blade", ["rank"]=8},
-	[0x0090]={["name"]="Power Slash", ["rank"]=4},
-	[0x0091]={["name"]="Gale Slash", ["rank"]=3},
-	[0x0092]={["name"]="Brave Blade", ["rank"]=7},
-	[0x0093]={["name"]="Herculean Strike", ["rank"]=4},
-	[0x0094]={["name"]="Vicious Strike", ["rank"]=6},
-	[0x0095]={["name"]="Single Shot", ["rank"]=2},
-	[0x0096]={["name"]="Skewer", ["rank"]=1},
-	[0x0097]={["name"]="Poison Skewer", ["rank"]=2},
-	[0x0098]={["name"]="Poison Arrow", ["rank"]=5},
-	[0x0099]={["name"]="Blight", ["rank"]=7},
-	[0x009A]={["name"]="Virus Wave", ["rank"]=6},
-	[0x009B]={["name"]="Skull Cracker", ["rank"]=2},
-	[0x009C]={["name"]="Mind Slice", ["rank"]=4},
-	[0x009D]={["name"]="Hysterical Slap", ["rank"]=2},
-	[0x009E]={["name"]="Crazy Chain", ["rank"]=4},
-	[0x009F]={["name"]="Muzzle Shot", ["rank"]=2},
-	[0x00A0]={["name"]="Seal Bomb", ["rank"]=4},
-	[0x00A1]={["name"]="Arm Chopper", ["rank"]=2},
-	[0x00A2]={["name"]="Atom Smasher", ["rank"]=4},
-	[0x00A3]={["name"]="Cell Breaker", ["rank"]=3},
-	[0x00A4]={["name"]="Mustard Bomb", ["rank"]=5},
-	[0x00A5]={["name"]="Brain Shake", ["rank"]=3},
-	[0x00A6]={["name"]="Navas Nebula", ["rank"]=5},
-	[0x00A7]={["name"]="Golden Right", ["rank"]=0},
-	[0x00A8]={["name"]="Black Spot", ["rank"]=4},
-	[0x00A9]={["name"]="Rainy Death", ["rank"]=7},
-	[0x00AA]={["name"]="Hassou Tobi", ["rank"]=0},
-	[0x00AB]={["name"]="Rampage", ["rank"]=3},
-	[0x00AC]={["name"]="Aeon Rain", ["rank"]=6},
-	[0x00AD]={["name"]="Agneyastra", ["rank"]=7},
-	[0x00AE]={["name"]="Cruel Attack", ["rank"]=4},
-	[0x00AF]={["name"]="Vile Assault", ["rank"]=6},
-	[0x00B0]={["name"]="Rampage", ["rank"]=0},
-	[0x00B1]={["name"]="Attack Up Support", ["rank"]=0},
-	[0x00B2]={["name"]="Guard Up Support", ["rank"]=0},
-	[0x00B3]={["name"]="Agility Up Support", ["rank"]=0},
-	[0x00B4]={["name"]="Charge Support", ["rank"]=0},
-	[0x00B5]={["name"]="HP Recovery Support", ["rank"]=0},
-	[0x00B6]={["name"]="SP Recovery Support", ["rank"]=0},
-	[0x00B7]={["name"]="Blank", ["rank"]=0},
-	[0x00B8]={["name"]="Blank", ["rank"]=0},
-	[0x00B9]={["name"]="Blank", ["rank"]=0},
-	[0x00BA]={["name"]="Blank", ["rank"]=0},
-	[0x00BB]={["name"]="Blank", ["rank"]=0},
-	[0x00BC]={["name"]="Blank", ["rank"]=0},
-	[0x00BD]={["name"]="Blank", ["rank"]=0},
-	[0x00BE]={["name"]="Blank", ["rank"]=0},
-	[0x00BF]={["name"]="Blank", ["rank"]=0},
-	[0x00C0]={["name"]="Dia", ["rank"]=1},
-	[0x00C1]={["name"]="Diarama", ["rank"]=3},
-	[0x00C2]={["name"]="Diarahan", ["rank"]=5},
-	[0x00C3]={["name"]="Media", ["rank"]=3},
-	[0x00C4]={["name"]="Mediarama", ["rank"]=5},
-	[0x00C5]={["name"]="Mediarahan", ["rank"]=7},
-	[0x00C6]={["name"]="Salvation", ["rank"]=8},
-	[0x00C7]={["name"]="Patra", ["rank"]=1},
-	[0x00C8]={["name"]="Me Patra", ["rank"]=3},
-	[0x00C9]={["name"]="Re Patra", ["rank"]=2},
-	[0x00CA]={["name"]="Posumudi", ["rank"]=2},
-	[0x00CB]={["name"]="Mutudi", ["rank"]=1},
-	[0x00CC]={["name"]="Enradi", ["rank"]=0},
-	[0x00CD]={["name"]="Tirundi", ["rank"]=0},
-	[0x00CE]={["name"]="Nervundi", ["rank"]=2},
-	[0x00CF]={["name"]="Energy Shower", ["rank"]=2},
-	[0x00D0]={["name"]="Amrita", ["rank"]=4},
-	[0x00D1]={["name"]="Recarm", ["rank"]=2},
-	[0x00D2]={["name"]="Samarecarm", ["rank"]=5},
-	[0x00D3]={["name"]="Tarunda", ["rank"]=1},
-	[0x00D4]={["name"]="Matarunda", ["rank"]=4},
-	[0x00D5]={["name"]="Sukunda", ["rank"]=1},
-	[0x00D6]={["name"]="Masukunda", ["rank"]=4},
-	[0x00D7]={["name"]="Rakunda", ["rank"]=1},
-	[0x00D8]={["name"]="Marakunda", ["rank"]=4},
-	[0x00D9]={["name"]="Dekunda", ["rank"]=3},
-	[0x00DA]={["name"]="Tarukaja", ["rank"]=1},
-	[0x00DB]={["name"]="Matarukaja", ["rank"]=4},
-	[0x00DC]={["name"]="Sukukaja", ["rank"]=1},
-	[0x00DD]={["name"]="Masukukaja", ["rank"]=4},
-	[0x00DE]={["name"]="Rakukaja", ["rank"]=1},
-	[0x00DF]={["name"]="Marakukaja", ["rank"]=4},
-	[0x00E0]={["name"]="Dekaja", ["rank"]=3},
-	[0x00E1]={["name"]="Heat Riser", ["rank"]=0},
-	[0x00E2]={["name"]="Debilitate", ["rank"]=0},
-	[0x00E3]={["name"]="Power Charge", ["rank"]=6},
-	[0x00E4]={["name"]="Mind Charge", ["rank"]=6},
-	[0x00E5]={["name"]="Tetrakarn", ["rank"]=7},
-	[0x00E6]={["name"]="Makarakarn", ["rank"]=7},
-	[0x00E7]={["name"]="Tetra Break", ["rank"]=7},
-	[0x00E8]={["name"]="Makara Break", ["rank"]=7},
-	[0x00E9]={["name"]="Tetraja", ["rank"]=5},
-	[0x00EA]={["name"]="Rebellion", ["rank"]=2},
-	[0x00EB]={["name"]="Revolution", ["rank"]=4},
-	[0x00EC]={["name"]="Fire Break", ["rank"]=3},
-	[0x00ED]={["name"]="Ice Break", ["rank"]=3},
-	[0x00EE]={["name"]="Wind Break", ["rank"]=3},
-	[0x00EF]={["name"]="Elec Break", ["rank"]=3},
-	[0x00F0]={["name"]="Red Wall", ["rank"]=4},
-	[0x00F1]={["name"]="White Wall", ["rank"]=4},
-	[0x00F2]={["name"]="Blue Wall", ["rank"]=4},
-	[0x00F3]={["name"]="Green Wall", ["rank"]=4},
-	[0x00F4]={["name"]="Trafuri", ["rank"]=3},
-	[0x00F5]={["name"]="Recarmdra", ["rank"]=0},
-	[0x00F6]={["name"]="Traesto", ["rank"]=1},
-	[0x00F7]={["name"]="Youthful Wind", ["rank"]=0},
-	[0x00F8]={["name"]="Dragon Hustle", ["rank"]=0},
-	[0x00F9]={["name"]="Burning Petals", ["rank"]=0},
-	[0x00FA]={["name"]="The Man's Way", ["rank"]=0},
-	[0x00FB]={["name"]="Kamui Miracle", ["rank"]=0},
-	[0x00FC]={["name"]="Shield of Justice", ["rank"]=0},
-	[0x00FD]={["name"]="Complete Analysis", ["rank"]=0},
-	[0x00FE]={["name"]="Blank", ["rank"]=0},
-	[0x00FF]={["name"]="? ? ? ? ?", ["rank"]=0},
-	[0x0100]={["name"]="100", ["rank"]=0},
-	[0x0101]={["name"]="101", ["rank"]=0},
-	[0x0102]={["name"]="102", ["rank"]=0},
-	[0x0103]={["name"]="Waste Money", ["rank"]=0},
-	[0x0104]={["name"]="Yosuke Strike", ["rank"]=0},
-	[0x0105]={["name"]="Galactic Punt", ["rank"]=0},
-	[0x0106]={["name"]="Fan Assault", ["rank"]=0},
-	[0x0107]={["name"]="Atomic Press", ["rank"]=0},
-	[0x0108]={["name"]="Wild Ways", ["rank"]=0},
-	[0x0109]={["name"]="Ultra Trigger", ["rank"]=0},
-	[0x010A]={["name"]="Galaxy Kick", ["rank"]=0},
-	[0x010B]={["name"]="Full Analysis", ["rank"]=0},
-	[0x010C]={["name"]="Third Eye", ["rank"]=0},
-	[0x010D]={["name"]="Weakness Scan", ["rank"]=0},
-	[0x010E]={["name"]="Healing Wave", ["rank"]=0},
-	[0x010F]={["name"]="Relaxing Wave", ["rank"]=0},
-	[0x0110]={["name"]="Analyze", ["rank"]=0},
-	[0x0111]={["name"]="Summon", ["rank"]=0},
-	[0x0112]={["name"]="Enemy Radar", ["rank"]=0},
-	[0x0113]={["name"]="Treasure Radar", ["rank"]=0},
-	[0x0114]={["name"]="Certain Escape", ["rank"]=0},
-	[0x0115]={["name"]="Myriad Truths", ["rank"]=0},
-	[0x0116]={["name"]="Cavalry Attack", ["rank"]=0},
-	[0x0117]={["name"]="Cavalry Attack", ["rank"]=0},
-	[0x0118]={["name"]="Cavalry Attack", ["rank"]=0},
-	[0x0119]={["name"]="Cavalry Attack", ["rank"]=0},
-	[0x011A]={["name"]="Cavalry Attack", ["rank"]=0},
-	[0x011B]={["name"]="Cavalry Attack", ["rank"]=0},
-	[0x011C]={["name"]="All-Out Boost", ["rank"]=0},
-	[0x011D]={["name"]="Rise's Revival", ["rank"]=0},
-	[0x011E]={["name"]="Stamina Song", ["rank"]=0},
-	[0x011F]={["name"]="Vigor Song", ["rank"]=0},
-	[0x015D]={["name"]="Junes Bomber", ["rank"]=0},
-	[0x015E]={["name"]="Twin Dragons", ["rank"]=0},
-	[0x015F]={["name"]="Beauty &amp;amp; The Beast", ["rank"]=0},
-	[0x0160]={["name"]="Wind of Oblivion", ["rank"]=0},
-	[0x0161]={["name"]="Bottomless Envy", ["rank"]=0},
-	[0x0162]={["name"]="Burn to Ashes", ["rank"]=0},
-	[0x0163]={["name"]="Shivering Rondo", ["rank"]=0},
-	[0x0164]={["name"]="Summon:Summon the prince", ["rank"]=0},
-	[0x0165]={["name"]="Summon:Fails to summon the prince", ["rank"]=0},
-	[0x0166]={["name"]="Forbidden Murmur", ["rank"]=0},
-	[0x0167]={["name"]="Roar of Wrath", ["rank"]=0},
-	[0x0168]={["name"]="Fanatical Spark", ["rank"]=0},
-	[0x0169]={["name"]="Supreme Insight", ["rank"]=0},
-	[0x016A]={["name"]="Nihil Hand", ["rank"]=0},
-	[0x016B]={["name"]="Ultra Charge", ["rank"]=0},
-	[0x016C]={["name"]="Nullity Guidance", ["rank"]=0},
-	[0x016D]={["name"]="Attack", ["rank"]=0},
-	[0x016E]={["name"]="Whisper", ["rank"]=0},
-	[0x016F]={["name"]="Chant", ["rank"]=0},
-	[0x0170]={["name"]="Prayer", ["rank"]=0},
-	[0x0171]={["name"]="Character Setup:Barrier assembly skill for appearace effect", ["rank"]=0},
-	[0x0172]={["name"]="Command:Phys damage to 1 foe", ["rank"]=0},
-	[0x0173]={["name"]="Command:Almighty damage to 1 foe", ["rank"]=0},
-	[0x0174]={["name"]="Command:Almighty damage to all foe (1 Morale Icons)", ["rank"]=0},
-	[0x01D8]={["name"]="Resist Physical", ["rank"]=4},
-	[0x01D9]={["name"]="Null Physical", ["rank"]=6},
-	[0x01DA]={["name"]="Repel Physical", ["rank"]=7},
-	[0x01DB]={["name"]="Absorb Physical", ["rank"]=8},
-	[0x01DC]={["name"]="Resist Fire", ["rank"]=4},
-	[0x01DD]={["name"]="Null Fire", ["rank"]=6},
-	[0x01DE]={["name"]="Repel Fire", ["rank"]=7},
-	[0x01DF]={["name"]="Absorb Fire", ["rank"]=8},
-	[0x01E0]={["name"]="Resist Ice", ["rank"]=4},
-	[0x01E1]={["name"]="Null Ice", ["rank"]=6},
-	[0x01E2]={["name"]="Repel Ice", ["rank"]=7},
-	[0x01E3]={["name"]="Absorb Ice", ["rank"]=8},
-	[0x01E4]={["name"]="Resist Elec", ["rank"]=4},
-	[0x01E5]={["name"]="Null Elec", ["rank"]=6},
-	[0x01E6]={["name"]="Repel Elec", ["rank"]=7},
-	[0x01E7]={["name"]="Absorb Elec", ["rank"]=8},
-	[0x01E8]={["name"]="Resist Wind", ["rank"]=4},
-	[0x01E9]={["name"]="Null Wind", ["rank"]=6},
-	[0x01EA]={["name"]="Repel Wind", ["rank"]=7},
-	[0x01EB]={["name"]="Absorb Wind", ["rank"]=8},
-	[0x01EC]={["name"]="Resist Light", ["rank"]=5},
-	[0x01ED]={["name"]="Null Light", ["rank"]=6},
-	[0x01EE]={["name"]="Repel Light", ["rank"]=7},
-	[0x01EF]={["name"]="Resist Dark", ["rank"]=5},
-	[0x01F0]={["name"]="Null Dark", ["rank"]=6},
-	[0x01F1]={["name"]="Repel Dark", ["rank"]=7},
-	[0x01F2]={["name"]="Null Panic", ["rank"]=4},
-	[0x01F3]={["name"]="Null Exhaust", ["rank"]=4},
-	[0x01F4]={["name"]="Null Mute", ["rank"]=4},
-	[0x01F5]={["name"]="Null Fear", ["rank"]=4},
-	[0x01F6]={["name"]="Null Rage", ["rank"]=4},
-	[0x01F7]={["name"]="Null Poison", ["rank"]=4},
-	[0x01F8]={["name"]="Null Dizzy", ["rank"]=4},
-	[0x01F9]={["name"]="Null Enervate", ["rank"]=4},
-	[0x01FA]={["name"]="Unshaken Will", ["rank"]=0},
-	[0x01FB]={["name"]="Masakados", ["rank"]=0},
-	[0x01FC]={["name"]="Dodge Physical", ["rank"]=2},
-	[0x01FD]={["name"]="Evade Physical", ["rank"]=4},
-	[0x01FE]={["name"]="Dodge Fire", ["rank"]=2},
-	[0x01FF]={["name"]="Evade Fire", ["rank"]=4},
-	[0x0200]={["name"]="Dodge Ice", ["rank"]=2},
-	[0x0201]={["name"]="Evade Ice", ["rank"]=4},
-	[0x0202]={["name"]="Dodge Wind", ["rank"]=2},
-	[0x0203]={["name"]="Evade Wind", ["rank"]=4},
-	[0x0204]={["name"]="Dodge Elec", ["rank"]=2},
-	[0x0205]={["name"]="Evade Elec", ["rank"]=4},
-	[0x0206]={["name"]="Angelic Grace", ["rank"]=7},
-	[0x0207]={["name"]="Fire Boost", ["rank"]=1},
-	[0x0208]={["name"]="Fire Amp", ["rank"]=5},
-	[0x0209]={["name"]="Ice Boost", ["rank"]=1},
-	[0x020A]={["name"]="Ice Amp", ["rank"]=5},
-	[0x020B]={["name"]="Elec Boost", ["rank"]=1},
-	[0x020C]={["name"]="Elec Amp", ["rank"]=5},
-	[0x020D]={["name"]="Wind Boost", ["rank"]=1},
-	[0x020E]={["name"]="Wind Amp", ["rank"]=5},
-	[0x020F]={["name"]="Certain Escape", ["rank"]=0},
-	[0x0210]={["name"]="HP Up 1", ["rank"]=0},
-	[0x0211]={["name"]="Hp Up 2", ["rank"]=0},
-	[0x0212]={["name"]="Hp Up 3", ["rank"]=0},
-	[0x0213]={["name"]="Sp Up 1", ["rank"]=0},
-	[0x0214]={["name"]="Sp Up 2", ["rank"]=0},
-	[0x0215]={["name"]="Sp Up 3", ["rank"]=0},
-	[0x0216]={["name"]="Counter", ["rank"]=3},
-	[0x0217]={["name"]="Counterstrike", ["rank"]=4},
-	[0x0218]={["name"]="High Counter", ["rank"]=5},
-	[0x0219]={["name"]="Regenerate 1", ["rank"]=3},
-	[0x021A]={["name"]="Regenerate 2", ["rank"]=5},
-	[0x021B]={["name"]="Regenerate 3", ["rank"]=6},
-	[0x021C]={["name"]="Invigorate 1", ["rank"]=3},
-	[0x021D]={["name"]="Invigorate 2", ["rank"]=5},
-	[0x021E]={["name"]="Invigorate 3", ["rank"]=6},
-	[0x021F]={["name"]="Growth 1", ["rank"]=2},
-	[0x0220]={["name"]="Growth 2", ["rank"]=4},
-	[0x0221]={["name"]="Growth 3", ["rank"]=6},
-	[0x0222]={["name"]="Auto-Tarukaja", ["rank"]=3},
-	[0x0223]={["name"]="Auto-Rakukaja", ["rank"]=3},
-	[0x0224]={["name"]="Auto-Sukukaja", ["rank"]=3},
-	[0x0225]={["name"]="Alertness", ["rank"]=2},
-	[0x0226]={["name"]="Sharp Student", ["rank"]=1},
-	[0x0227]={["name"]="Apt Pupil", ["rank"]=3},
-	[0x0228]={["name"]="Ali Dance", ["rank"]=5},
-	[0x0229]={["name"]="Firm Stance", ["rank"]=5},
-	[0x022A]={["name"]="Spell Master", ["rank"]=7},
-	[0x022B]={["name"]="Arms Master", ["rank"]=7},
-	[0x022C]={["name"]="Hp Favor", ["rank"]=0},
-	[0x022D]={["name"]="Sp Favor", ["rank"]=0},
-	[0x022E]={["name"]="Divine Grace", ["rank"]=6},
-	[0x022F]={["name"]="Endure", ["rank"]=5},
-	[0x0230]={["name"]="Enduring Soul", ["rank"]=7},
-	[0x0231]={["name"]="Survive Light", ["rank"]=4},
-	[0x0232]={["name"]="Survive Dark", ["rank"]=4},
-	[0x0233]={["name"]="Auto-Marakuk", ["rank"]=6},
-	[0x0234]={["name"]="Auto-Mataru", ["rank"]=6},
-	[0x0235]={["name"]="Auti-Masuku", ["rank"]=6},
-	[0x0236]={["name"]="Panic Boost", ["rank"]=4},
-	[0x0237]={["name"]="Poison Boost", ["rank"]=4},
-	[0x0238]={["name"]="Exhaust Boost", ["rank"]=4},
-	[0x0239]={["name"]="Silence Boost", ["rank"]=4},
-	[0x023A]={["name"]="Fear Boost", ["rank"]=4},
-	[0x023B]={["name"]="Rage Boost", ["rank"]=4},
-	[0x023C]={["name"]="Dizzy Boost", ["rank"]=4},
-	[0x023D]={["name"]="Enervate Boost", ["rank"]=4},
-	[0x023E]={["name"]="Ailment Boost", ["rank"]=6},
-	[0x023F]={["name"]="Hama Boost", ["rank"]=5},
-	[0x0240]={["name"]="Mudo Bost", ["rank"]=5},
-	[0x0241]={["name"]="Endure Light", ["rank"]=5},
-	[0x0242]={["name"]="Endure Dark", ["rank"]=5},
-	[0x0243]={["name"]="Cool Breeze", ["rank"]=5},
-	[0x0244]={["name"]="Victory Cry", ["rank"]=7},
-	[0x0245]={["name"]="Resist Poison", ["rank"]=2},
-	[0x0246]={["name"]="Resist Panic", ["rank"]=2},
-	[0x0247]={["name"]="Resist Fear", ["rank"]=2},
-	[0x0248]={["name"]="Resist Exhaust", ["rank"]=2},
-	[0x0249]={["name"]="Resist Enervate", ["rank"]=2},
-	[0x024A]={["name"]="Resist Rage", ["rank"]=2},
-	[0x024B]={["name"]="Resist Dizzy", ["rank"]=2},
-	[0x024C]={["name"]="Resist Mute", ["rank"]=2},
-	[0x024D]={["name"]="HP Amp", ["rank"]=0},
-	[0x024E]={["name"]="SP Amp", ["rank"]=0},
-	[0x024F]={["name"]="Fast Healing", ["rank"]=3},
-	[0x0250]={["name"]="Insta-Heal", ["rank"]=7},
-	[0x0251]={["name"]="Infinite Endure", ["rank"]=0},
-	[0x0252]={["name"]="Izanami Endure", ["rank"]=0},
-	[0x0253]={["name"]="Alienation Wall", ["rank"]=0},
+    [0x0001]={["name"]="Agi", ["rank"]=1},
+    [0x0002]={["name"]="Agilao", ["rank"]=3},
+    [0x0003]={["name"]="Agidyne", ["rank"]=5},
+    [0x0004]={["name"]="Maragi", ["rank"]=2},
+    [0x0005]={["name"]="Maragion", ["rank"]=4},
+    [0x0006]={["name"]="Maragidyne", ["rank"]=6},
+    [0x0007]={["name"]="Peominence", ["rank"]=0},
+    [0x0008]={["name"]="Ragnarok", ["rank"]=0},
+    [0x0009]={["name"]="Immortal Flame", ["rank"]=0},
+    [0x000A]={["name"]="Tiny Soul Tomato", ["rank"]=0},
+    [0x000B]={["name"]="Tetracorn", ["rank"]=0},
+    [0x000C]={["name"]="Run Amok", ["rank"]=0},
+    [0x000D]={["name"]="Shake Off", ["rank"]=0},
+    [0x000E]={["name"]="Garu", ["rank"]=1},
+    [0x000F]={["name"]="Garula", ["rank"]=3},
+    [0x0010]={["name"]="Garudyne", ["rank"]=5},
+    [0x0011]={["name"]="Magaru", ["rank"]=2},
+    [0x0012]={["name"]="Magarula", ["rank"]=4},
+    [0x0013]={["name"]="Magarudyne", ["rank"]=6},
+    [0x0014]={["name"]="Divine Vacuum", ["rank"]=0},
+    [0x0015]={["name"]="Panta Rhei", ["rank"]=0},
+    [0x0016]={["name"]="Hiranya Cabbage", ["rank"]=0},
+    [0x0017]={["name"]="Cry of Denial", ["rank"]=0},
+    [0x0018]={["name"]="Hot Lightning", ["rank"]=0},
+    [0x0019]={["name"]="Draining Fog", ["rank"]=0},
+    [0x001A]={["name"]="Bufu", ["rank"]=1},
+    [0x001B]={["name"]="Bufula", ["rank"]=3},
+    [0x001C]={["name"]="Bufudyne", ["rank"]=5},
+    [0x001D]={["name"]="Mabufu", ["rank"]=2},
+    [0x001E]={["name"]="Mabufula", ["rank"]=4},
+    [0x001F]={["name"]="Mabufudyne", ["rank"]=6},
+    [0x0020]={["name"]="Cocytus Pain", ["rank"]=0},
+    [0x0021]={["name"]="Niflheim", ["rank"]=0},
+    [0x0022]={["name"]="Bloody Rain", ["rank"]=0},
+    [0x0023]={["name"]="Red Paprika", ["rank"]=0},
+    [0x0024]={["name"]="Enclosure Shell", ["rank"]=0},
+    [0x0025]={["name"]="Hot Lightning", ["rank"]=0},
+    [0x0026]={["name"]="Shell of Denial", ["rank"]=0},
+    [0x0027]={["name"]="Zio", ["rank"]=1},
+    [0x0028]={["name"]="Zionga", ["rank"]=3},
+    [0x0029]={["name"]="Ziodyne", ["rank"]=5},
+    [0x002A]={["name"]="Mazio", ["rank"]=2},
+    [0x002B]={["name"]="Mazionga", ["rank"]=4},
+    [0x002C]={["name"]="Maziodyne", ["rank"]=6},
+    [0x002D]={["name"]="Jihad", ["rank"]=0},
+    [0x002E]={["name"]="Thunder Reign", ["rank"]=0},
+    [0x002F]={["name"]="Bead Melon", ["rank"]=0},
+    [0x0030]={["name"]="Mid Soul Tomato", ["rank"]=0},
+    [0x0031]={["name"]="Big Soul Tomato", ["rank"]=0},
+    [0x0032]={["name"]="Makaracorn", ["rank"]=0},
+    [0x0033]={["name"]="Megido", ["rank"]=3},
+    [0x0034]={["name"]="Megidola", ["rank"]=6},
+    [0x0035]={["name"]="Megidolaon", ["rank"]=8},
+    [0x0036]={["name"]="Last Resort", ["rank"]=0},
+    [0x0037]={["name"]="Black Viper", ["rank"]=0},
+    [0x0038]={["name"]="Morning Star", ["rank"]=0},
+    [0x0039]={["name"]="White Paprika", ["rank"]=0},
+    [0x003A]={["name"]="Blue Paprika", ["rank"]=0},
+    [0x003B]={["name"]="Green Paprika", ["rank"]=0},
+    [0x003C]={["name"]="Blank", ["rank"]=0},
+    [0x003D]={["name"]="Hama", ["rank"]=2},
+    [0x003E]={["name"]="Hamaon", ["rank"]=5},
+    [0x003F]={["name"]="Mahama", ["rank"]=3},
+    [0x0040]={["name"]="Mahamaon", ["rank"]=6},
+    [0x0041]={["name"]="Eternal White", ["rank"]=0},
+    [0x0042]={["name"]="God's Judgment", ["rank"]=8},
+    [0x0043]={["name"]="Samsara", ["rank"]=0},
+    [0x0044]={["name"]="Blank", ["rank"]=0},
+    [0x0045]={["name"]="Blank", ["rank"]=0},
+    [0x0046]={["name"]="Blank", ["rank"]=0},
+    [0x0047]={["name"]="Blank", ["rank"]=0},
+    [0x0048]={["name"]="Mudo", ["rank"]=2},
+    [0x0049]={["name"]="Mudoon", ["rank"]=5},
+    [0x004A]={["name"]="Mamudo", ["rank"]=3},
+    [0x004B]={["name"]="Mamudoon", ["rank"]=6},
+    [0x004C]={["name"]="Eternal Black", ["rank"]=0},
+    [0x004D]={["name"]="Hell's Judgment", ["rank"]=8},
+    [0x004E]={["name"]="Die for Me!", ["rank"]=0},
+    [0x004F]={["name"]="Blank", ["rank"]=0},
+    [0x0050]={["name"]="Blank", ["rank"]=0},
+    [0x0051]={["name"]="Blank", ["rank"]=0},
+    [0x0052]={["name"]="Blank", ["rank"]=0},
+    [0x0053]={["name"]="Pulinpa", ["rank"]=1},
+    [0x0054]={["name"]="Tentarafoo", ["rank"]=3},
+    [0x0055]={["name"]="Evil Touch", ["rank"]=1},
+    [0x0056]={["name"]="Evil Smile", ["rank"]=3},
+    [0x0057]={["name"]="Ghastly Wail", ["rank"]=6},
+    [0x0058]={["name"]="Balzac", ["rank"]=1},
+    [0x0059]={["name"]="Valiant Dance", ["rank"]=3},
+    [0x005A]={["name"]="Poisma", ["rank"]=1},
+    [0x005B]={["name"]="Poison Mist", ["rank"]=3},
+    [0x005C]={["name"]="Soul Break", ["rank"]=1},
+    [0x005D]={["name"]="Anima Freeze", ["rank"]=3},
+    [0x005E]={["name"]="Enervation", ["rank"]=1},
+    [0x005F]={["name"]="Old One", ["rank"]=3},
+    [0x0060]={["name"]="Galgalim Eyes", ["rank"]=0},
+    [0x0061]={["name"]="Makajam", ["rank"]=1},
+    [0x0062]={["name"]="Foolish Whisper", ["rank"]=3},
+    [0x0063]={["name"]="Foul Breath", ["rank"]=2},
+    [0x0064]={["name"]="Stagnant Air", ["rank"]=4},
+    [0x0065]={["name"]="Life Drain", ["rank"]=2},
+    [0x0066]={["name"]="Spirit Drain", ["rank"]=2},
+    [0x0067]={["name"]="Life Leech", ["rank"]=0},
+    [0x0068]={["name"]="Spirit Leech", ["rank"]=0},
+    [0x0069]={["name"]="Judgement", ["rank"]=0},
+    [0x006A]={["name"]="Balzac", ["rank"]=0},
+    [0x006B]={["name"]="Last Resort", ["rank"]=0},
+    [0x006C]={["name"]="Last Resort", ["rank"]=0},
+    [0x006D]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x006E]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x006F]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0070]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0071]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0072]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0073]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0074]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0075]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x0076]={["name"]="Blank", ["rank"]=0},
+    [0x0077]={["name"]="Elemental Break", ["rank"]=0},
+    [0x0078]={["name"]="Bash", ["rank"]=1},
+    [0x0079]={["name"]="Cleave", ["rank"]=1},
+    [0x007A]={["name"]="Assault Drive", ["rank"]=3},
+    [0x007B]={["name"]="Sonic Punch", ["rank"]=2},
+    [0x007C]={["name"]="Double Fangs", ["rank"]=2},
+    [0x007D]={["name"]="Kill Rush", ["rank"]=3},
+    [0x007E]={["name"]="Swift Strike", ["rank"]=3},
+    [0x007F]={["name"]="Twin Shot", ["rank"]=3},
+    [0x0080]={["name"]="Fatal End", ["rank"]=4},
+    [0x0081]={["name"]="Mighty Swing", ["rank"]=5},
+    [0x0082]={["name"]="Torrent Shot", ["rank"]=5},
+    [0x0083]={["name"]="Heat Wave", ["rank"]=5},
+    [0x0084]={["name"]="Gigantic Fist", ["rank"]=6},
+    [0x0085]={["name"]="Blade of Fury", ["rank"]=5},
+    [0x0086]={["name"]="Deathbound", ["rank"]=6},
+    [0x0087]={["name"]="Arrow Rain", ["rank"]=6},
+    [0x0088]={["name"]="Akasha Arts", ["rank"]=7},
+    [0x0089]={["name"]="Tempest Slash", ["rank"]=6},
+    [0x008A]={["name"]="Heaven's Blade", ["rank"]=0},
+    [0x008B]={["name"]="Myriad Arrows", ["rank"]=7},
+    [0x008C]={["name"]="God's Hand", ["rank"]=8},
+    [0x008D]={["name"]="Pralaya", ["rank"]=0},
+    [0x008E]={["name"]="Primal Force", ["rank"]=8},
+    [0x008F]={["name"]="Vorpal Blade", ["rank"]=8},
+    [0x0090]={["name"]="Power Slash", ["rank"]=4},
+    [0x0091]={["name"]="Gale Slash", ["rank"]=3},
+    [0x0092]={["name"]="Brave Blade", ["rank"]=7},
+    [0x0093]={["name"]="Herculean Strike", ["rank"]=4},
+    [0x0094]={["name"]="Vicious Strike", ["rank"]=6},
+    [0x0095]={["name"]="Single Shot", ["rank"]=2},
+    [0x0096]={["name"]="Skewer", ["rank"]=1},
+    [0x0097]={["name"]="Poison Skewer", ["rank"]=2},
+    [0x0098]={["name"]="Poison Arrow", ["rank"]=5},
+    [0x0099]={["name"]="Blight", ["rank"]=7},
+    [0x009A]={["name"]="Virus Wave", ["rank"]=6},
+    [0x009B]={["name"]="Skull Cracker", ["rank"]=2},
+    [0x009C]={["name"]="Mind Slice", ["rank"]=4},
+    [0x009D]={["name"]="Hysterical Slap", ["rank"]=2},
+    [0x009E]={["name"]="Crazy Chain", ["rank"]=4},
+    [0x009F]={["name"]="Muzzle Shot", ["rank"]=2},
+    [0x00A0]={["name"]="Seal Bomb", ["rank"]=4},
+    [0x00A1]={["name"]="Arm Chopper", ["rank"]=2},
+    [0x00A2]={["name"]="Atom Smasher", ["rank"]=4},
+    [0x00A3]={["name"]="Cell Breaker", ["rank"]=3},
+    [0x00A4]={["name"]="Mustard Bomb", ["rank"]=5},
+    [0x00A5]={["name"]="Brain Shake", ["rank"]=3},
+    [0x00A6]={["name"]="Navas Nebula", ["rank"]=5},
+    [0x00A7]={["name"]="Golden Right", ["rank"]=0},
+    [0x00A8]={["name"]="Black Spot", ["rank"]=4},
+    [0x00A9]={["name"]="Rainy Death", ["rank"]=7},
+    [0x00AA]={["name"]="Hassou Tobi", ["rank"]=0},
+    [0x00AB]={["name"]="Rampage", ["rank"]=3},
+    [0x00AC]={["name"]="Aeon Rain", ["rank"]=6},
+    [0x00AD]={["name"]="Agneyastra", ["rank"]=7},
+    [0x00AE]={["name"]="Cruel Attack", ["rank"]=4},
+    [0x00AF]={["name"]="Vile Assault", ["rank"]=6},
+    [0x00B0]={["name"]="Rampage", ["rank"]=0},
+    [0x00B1]={["name"]="Attack Up Support", ["rank"]=0},
+    [0x00B2]={["name"]="Guard Up Support", ["rank"]=0},
+    [0x00B3]={["name"]="Agility Up Support", ["rank"]=0},
+    [0x00B4]={["name"]="Charge Support", ["rank"]=0},
+    [0x00B5]={["name"]="HP Recovery Support", ["rank"]=0},
+    [0x00B6]={["name"]="SP Recovery Support", ["rank"]=0},
+    [0x00B7]={["name"]="Blank", ["rank"]=0},
+    [0x00B8]={["name"]="Blank", ["rank"]=0},
+    [0x00B9]={["name"]="Blank", ["rank"]=0},
+    [0x00BA]={["name"]="Blank", ["rank"]=0},
+    [0x00BB]={["name"]="Blank", ["rank"]=0},
+    [0x00BC]={["name"]="Blank", ["rank"]=0},
+    [0x00BD]={["name"]="Blank", ["rank"]=0},
+    [0x00BE]={["name"]="Blank", ["rank"]=0},
+    [0x00BF]={["name"]="Blank", ["rank"]=0},
+    [0x00C0]={["name"]="Dia", ["rank"]=1},
+    [0x00C1]={["name"]="Diarama", ["rank"]=3},
+    [0x00C2]={["name"]="Diarahan", ["rank"]=5},
+    [0x00C3]={["name"]="Media", ["rank"]=3},
+    [0x00C4]={["name"]="Mediarama", ["rank"]=5},
+    [0x00C5]={["name"]="Mediarahan", ["rank"]=7},
+    [0x00C6]={["name"]="Salvation", ["rank"]=8},
+    [0x00C7]={["name"]="Patra", ["rank"]=1},
+    [0x00C8]={["name"]="Me Patra", ["rank"]=3},
+    [0x00C9]={["name"]="Re Patra", ["rank"]=2},
+    [0x00CA]={["name"]="Posumudi", ["rank"]=2},
+    [0x00CB]={["name"]="Mutudi", ["rank"]=1},
+    [0x00CC]={["name"]="Enradi", ["rank"]=0},
+    [0x00CD]={["name"]="Tirundi", ["rank"]=0},
+    [0x00CE]={["name"]="Nervundi", ["rank"]=2},
+    [0x00CF]={["name"]="Energy Shower", ["rank"]=2},
+    [0x00D0]={["name"]="Amrita", ["rank"]=4},
+    [0x00D1]={["name"]="Recarm", ["rank"]=2},
+    [0x00D2]={["name"]="Samarecarm", ["rank"]=5},
+    [0x00D3]={["name"]="Tarunda", ["rank"]=1},
+    [0x00D4]={["name"]="Matarunda", ["rank"]=4},
+    [0x00D5]={["name"]="Sukunda", ["rank"]=1},
+    [0x00D6]={["name"]="Masukunda", ["rank"]=4},
+    [0x00D7]={["name"]="Rakunda", ["rank"]=1},
+    [0x00D8]={["name"]="Marakunda", ["rank"]=4},
+    [0x00D9]={["name"]="Dekunda", ["rank"]=3},
+    [0x00DA]={["name"]="Tarukaja", ["rank"]=1},
+    [0x00DB]={["name"]="Matarukaja", ["rank"]=4},
+    [0x00DC]={["name"]="Sukukaja", ["rank"]=1},
+    [0x00DD]={["name"]="Masukukaja", ["rank"]=4},
+    [0x00DE]={["name"]="Rakukaja", ["rank"]=1},
+    [0x00DF]={["name"]="Marakukaja", ["rank"]=4},
+    [0x00E0]={["name"]="Dekaja", ["rank"]=3},
+    [0x00E1]={["name"]="Heat Riser", ["rank"]=0},
+    [0x00E2]={["name"]="Debilitate", ["rank"]=0},
+    [0x00E3]={["name"]="Power Charge", ["rank"]=6},
+    [0x00E4]={["name"]="Mind Charge", ["rank"]=6},
+    [0x00E5]={["name"]="Tetrakarn", ["rank"]=7},
+    [0x00E6]={["name"]="Makarakarn", ["rank"]=7},
+    [0x00E7]={["name"]="Tetra Break", ["rank"]=7},
+    [0x00E8]={["name"]="Makara Break", ["rank"]=7},
+    [0x00E9]={["name"]="Tetraja", ["rank"]=5},
+    [0x00EA]={["name"]="Rebellion", ["rank"]=2},
+    [0x00EB]={["name"]="Revolution", ["rank"]=4},
+    [0x00EC]={["name"]="Fire Break", ["rank"]=3},
+    [0x00ED]={["name"]="Ice Break", ["rank"]=3},
+    [0x00EE]={["name"]="Wind Break", ["rank"]=3},
+    [0x00EF]={["name"]="Elec Break", ["rank"]=3},
+    [0x00F0]={["name"]="Red Wall", ["rank"]=4},
+    [0x00F1]={["name"]="White Wall", ["rank"]=4},
+    [0x00F2]={["name"]="Blue Wall", ["rank"]=4},
+    [0x00F3]={["name"]="Green Wall", ["rank"]=4},
+    [0x00F4]={["name"]="Trafuri", ["rank"]=3},
+    [0x00F5]={["name"]="Recarmdra", ["rank"]=0},
+    [0x00F6]={["name"]="Traesto", ["rank"]=1},
+    [0x00F7]={["name"]="Youthful Wind", ["rank"]=0},
+    [0x00F8]={["name"]="Dragon Hustle", ["rank"]=0},
+    [0x00F9]={["name"]="Burning Petals", ["rank"]=0},
+    [0x00FA]={["name"]="The Man's Way", ["rank"]=0},
+    [0x00FB]={["name"]="Kamui Miracle", ["rank"]=0},
+    [0x00FC]={["name"]="Shield of Justice", ["rank"]=0},
+    [0x00FD]={["name"]="Complete Analysis", ["rank"]=0},
+    [0x00FE]={["name"]="Blank", ["rank"]=0},
+    [0x00FF]={["name"]="? ? ? ? ?", ["rank"]=0},
+    [0x0100]={["name"]="100", ["rank"]=0},
+    [0x0101]={["name"]="101", ["rank"]=0},
+    [0x0102]={["name"]="102", ["rank"]=0},
+    [0x0103]={["name"]="Waste Money", ["rank"]=0},
+    [0x0104]={["name"]="Yosuke Strike", ["rank"]=0},
+    [0x0105]={["name"]="Galactic Punt", ["rank"]=0},
+    [0x0106]={["name"]="Fan Assault", ["rank"]=0},
+    [0x0107]={["name"]="Atomic Press", ["rank"]=0},
+    [0x0108]={["name"]="Wild Ways", ["rank"]=0},
+    [0x0109]={["name"]="Ultra Trigger", ["rank"]=0},
+    [0x010A]={["name"]="Galaxy Kick", ["rank"]=0},
+    [0x010B]={["name"]="Full Analysis", ["rank"]=0},
+    [0x010C]={["name"]="Third Eye", ["rank"]=0},
+    [0x010D]={["name"]="Weakness Scan", ["rank"]=0},
+    [0x010E]={["name"]="Healing Wave", ["rank"]=0},
+    [0x010F]={["name"]="Relaxing Wave", ["rank"]=0},
+    [0x0110]={["name"]="Analyze", ["rank"]=0},
+    [0x0111]={["name"]="Summon", ["rank"]=0},
+    [0x0112]={["name"]="Enemy Radar", ["rank"]=0},
+    [0x0113]={["name"]="Treasure Radar", ["rank"]=0},
+    [0x0114]={["name"]="Certain Escape", ["rank"]=0},
+    [0x0115]={["name"]="Myriad Truths", ["rank"]=0},
+    [0x0116]={["name"]="Cavalry Attack", ["rank"]=0},
+    [0x0117]={["name"]="Cavalry Attack", ["rank"]=0},
+    [0x0118]={["name"]="Cavalry Attack", ["rank"]=0},
+    [0x0119]={["name"]="Cavalry Attack", ["rank"]=0},
+    [0x011A]={["name"]="Cavalry Attack", ["rank"]=0},
+    [0x011B]={["name"]="Cavalry Attack", ["rank"]=0},
+    [0x011C]={["name"]="All-Out Boost", ["rank"]=0},
+    [0x011D]={["name"]="Rise's Revival", ["rank"]=0},
+    [0x011E]={["name"]="Stamina Song", ["rank"]=0},
+    [0x011F]={["name"]="Vigor Song", ["rank"]=0},
+    [0x015D]={["name"]="Junes Bomber", ["rank"]=0},
+    [0x015E]={["name"]="Twin Dragons", ["rank"]=0},
+    [0x015F]={["name"]="Beauty &amp;amp; The Beast", ["rank"]=0},
+    [0x0160]={["name"]="Wind of Oblivion", ["rank"]=0},
+    [0x0161]={["name"]="Bottomless Envy", ["rank"]=0},
+    [0x0162]={["name"]="Burn to Ashes", ["rank"]=0},
+    [0x0163]={["name"]="Shivering Rondo", ["rank"]=0},
+    [0x0164]={["name"]="Summon:Summon the prince", ["rank"]=0},
+    [0x0165]={["name"]="Summon:Fails to summon the prince", ["rank"]=0},
+    [0x0166]={["name"]="Forbidden Murmur", ["rank"]=0},
+    [0x0167]={["name"]="Roar of Wrath", ["rank"]=0},
+    [0x0168]={["name"]="Fanatical Spark", ["rank"]=0},
+    [0x0169]={["name"]="Supreme Insight", ["rank"]=0},
+    [0x016A]={["name"]="Nihil Hand", ["rank"]=0},
+    [0x016B]={["name"]="Ultra Charge", ["rank"]=0},
+    [0x016C]={["name"]="Nullity Guidance", ["rank"]=0},
+    [0x016D]={["name"]="Attack", ["rank"]=0},
+    [0x016E]={["name"]="Whisper", ["rank"]=0},
+    [0x016F]={["name"]="Chant", ["rank"]=0},
+    [0x0170]={["name"]="Prayer", ["rank"]=0},
+    [0x0171]={["name"]="Character Setup:Barrier assembly skill for appearace effect", ["rank"]=0},
+    [0x0172]={["name"]="Command:Phys damage to 1 foe", ["rank"]=0},
+    [0x0173]={["name"]="Command:Almighty damage to 1 foe", ["rank"]=0},
+    [0x0174]={["name"]="Command:Almighty damage to all foe (1 Morale Icons)", ["rank"]=0},
+    [0x01D8]={["name"]="Resist Physical", ["rank"]=4},
+    [0x01D9]={["name"]="Null Physical", ["rank"]=6},
+    [0x01DA]={["name"]="Repel Physical", ["rank"]=7},
+    [0x01DB]={["name"]="Absorb Physical", ["rank"]=8},
+    [0x01DC]={["name"]="Resist Fire", ["rank"]=4},
+    [0x01DD]={["name"]="Null Fire", ["rank"]=6},
+    [0x01DE]={["name"]="Repel Fire", ["rank"]=7},
+    [0x01DF]={["name"]="Absorb Fire", ["rank"]=8},
+    [0x01E0]={["name"]="Resist Ice", ["rank"]=4},
+    [0x01E1]={["name"]="Null Ice", ["rank"]=6},
+    [0x01E2]={["name"]="Repel Ice", ["rank"]=7},
+    [0x01E3]={["name"]="Absorb Ice", ["rank"]=8},
+    [0x01E4]={["name"]="Resist Elec", ["rank"]=4},
+    [0x01E5]={["name"]="Null Elec", ["rank"]=6},
+    [0x01E6]={["name"]="Repel Elec", ["rank"]=7},
+    [0x01E7]={["name"]="Absorb Elec", ["rank"]=8},
+    [0x01E8]={["name"]="Resist Wind", ["rank"]=4},
+    [0x01E9]={["name"]="Null Wind", ["rank"]=6},
+    [0x01EA]={["name"]="Repel Wind", ["rank"]=7},
+    [0x01EB]={["name"]="Absorb Wind", ["rank"]=8},
+    [0x01EC]={["name"]="Resist Light", ["rank"]=5},
+    [0x01ED]={["name"]="Null Light", ["rank"]=6},
+    [0x01EE]={["name"]="Repel Light", ["rank"]=7},
+    [0x01EF]={["name"]="Resist Dark", ["rank"]=5},
+    [0x01F0]={["name"]="Null Dark", ["rank"]=6},
+    [0x01F1]={["name"]="Repel Dark", ["rank"]=7},
+    [0x01F2]={["name"]="Null Panic", ["rank"]=4},
+    [0x01F3]={["name"]="Null Exhaust", ["rank"]=4},
+    [0x01F4]={["name"]="Null Mute", ["rank"]=4},
+    [0x01F5]={["name"]="Null Fear", ["rank"]=4},
+    [0x01F6]={["name"]="Null Rage", ["rank"]=4},
+    [0x01F7]={["name"]="Null Poison", ["rank"]=4},
+    [0x01F8]={["name"]="Null Dizzy", ["rank"]=4},
+    [0x01F9]={["name"]="Null Enervate", ["rank"]=4},
+    [0x01FA]={["name"]="Unshaken Will", ["rank"]=0},
+    [0x01FB]={["name"]="Masakados", ["rank"]=0},
+    [0x01FC]={["name"]="Dodge Physical", ["rank"]=2},
+    [0x01FD]={["name"]="Evade Physical", ["rank"]=4},
+    [0x01FE]={["name"]="Dodge Fire", ["rank"]=2},
+    [0x01FF]={["name"]="Evade Fire", ["rank"]=4},
+    [0x0200]={["name"]="Dodge Ice", ["rank"]=2},
+    [0x0201]={["name"]="Evade Ice", ["rank"]=4},
+    [0x0202]={["name"]="Dodge Wind", ["rank"]=2},
+    [0x0203]={["name"]="Evade Wind", ["rank"]=4},
+    [0x0204]={["name"]="Dodge Elec", ["rank"]=2},
+    [0x0205]={["name"]="Evade Elec", ["rank"]=4},
+    [0x0206]={["name"]="Angelic Grace", ["rank"]=7},
+    [0x0207]={["name"]="Fire Boost", ["rank"]=1},
+    [0x0208]={["name"]="Fire Amp", ["rank"]=5},
+    [0x0209]={["name"]="Ice Boost", ["rank"]=1},
+    [0x020A]={["name"]="Ice Amp", ["rank"]=5},
+    [0x020B]={["name"]="Elec Boost", ["rank"]=1},
+    [0x020C]={["name"]="Elec Amp", ["rank"]=5},
+    [0x020D]={["name"]="Wind Boost", ["rank"]=1},
+    [0x020E]={["name"]="Wind Amp", ["rank"]=5},
+    [0x020F]={["name"]="Certain Escape", ["rank"]=0},
+    [0x0210]={["name"]="HP Up 1", ["rank"]=0},
+    [0x0211]={["name"]="Hp Up 2", ["rank"]=0},
+    [0x0212]={["name"]="Hp Up 3", ["rank"]=0},
+    [0x0213]={["name"]="Sp Up 1", ["rank"]=0},
+    [0x0214]={["name"]="Sp Up 2", ["rank"]=0},
+    [0x0215]={["name"]="Sp Up 3", ["rank"]=0},
+    [0x0216]={["name"]="Counter", ["rank"]=3},
+    [0x0217]={["name"]="Counterstrike", ["rank"]=4},
+    [0x0218]={["name"]="High Counter", ["rank"]=5},
+    [0x0219]={["name"]="Regenerate 1", ["rank"]=3},
+    [0x021A]={["name"]="Regenerate 2", ["rank"]=5},
+    [0x021B]={["name"]="Regenerate 3", ["rank"]=6},
+    [0x021C]={["name"]="Invigorate 1", ["rank"]=3},
+    [0x021D]={["name"]="Invigorate 2", ["rank"]=5},
+    [0x021E]={["name"]="Invigorate 3", ["rank"]=6},
+    [0x021F]={["name"]="Growth 1", ["rank"]=2},
+    [0x0220]={["name"]="Growth 2", ["rank"]=4},
+    [0x0221]={["name"]="Growth 3", ["rank"]=6},
+    [0x0222]={["name"]="Auto-Tarukaja", ["rank"]=3},
+    [0x0223]={["name"]="Auto-Rakukaja", ["rank"]=3},
+    [0x0224]={["name"]="Auto-Sukukaja", ["rank"]=3},
+    [0x0225]={["name"]="Alertness", ["rank"]=2},
+    [0x0226]={["name"]="Sharp Student", ["rank"]=1},
+    [0x0227]={["name"]="Apt Pupil", ["rank"]=3},
+    [0x0228]={["name"]="Ali Dance", ["rank"]=5},
+    [0x0229]={["name"]="Firm Stance", ["rank"]=5},
+    [0x022A]={["name"]="Spell Master", ["rank"]=7},
+    [0x022B]={["name"]="Arms Master", ["rank"]=7},
+    [0x022C]={["name"]="Hp Favor", ["rank"]=0},
+    [0x022D]={["name"]="Sp Favor", ["rank"]=0},
+    [0x022E]={["name"]="Divine Grace", ["rank"]=6},
+    [0x022F]={["name"]="Endure", ["rank"]=5},
+    [0x0230]={["name"]="Enduring Soul", ["rank"]=7},
+    [0x0231]={["name"]="Survive Light", ["rank"]=4},
+    [0x0232]={["name"]="Survive Dark", ["rank"]=4},
+    [0x0233]={["name"]="Auto-Marakuk", ["rank"]=6},
+    [0x0234]={["name"]="Auto-Mataru", ["rank"]=6},
+    [0x0235]={["name"]="Auti-Masuku", ["rank"]=6},
+    [0x0236]={["name"]="Panic Boost", ["rank"]=4},
+    [0x0237]={["name"]="Poison Boost", ["rank"]=4},
+    [0x0238]={["name"]="Exhaust Boost", ["rank"]=4},
+    [0x0239]={["name"]="Silence Boost", ["rank"]=4},
+    [0x023A]={["name"]="Fear Boost", ["rank"]=4},
+    [0x023B]={["name"]="Rage Boost", ["rank"]=4},
+    [0x023C]={["name"]="Dizzy Boost", ["rank"]=4},
+    [0x023D]={["name"]="Enervate Boost", ["rank"]=4},
+    [0x023E]={["name"]="Ailment Boost", ["rank"]=6},
+    [0x023F]={["name"]="Hama Boost", ["rank"]=5},
+    [0x0240]={["name"]="Mudo Bost", ["rank"]=5},
+    [0x0241]={["name"]="Endure Light", ["rank"]=5},
+    [0x0242]={["name"]="Endure Dark", ["rank"]=5},
+    [0x0243]={["name"]="Cool Breeze", ["rank"]=5},
+    [0x0244]={["name"]="Victory Cry", ["rank"]=7},
+    [0x0245]={["name"]="Resist Poison", ["rank"]=2},
+    [0x0246]={["name"]="Resist Panic", ["rank"]=2},
+    [0x0247]={["name"]="Resist Fear", ["rank"]=2},
+    [0x0248]={["name"]="Resist Exhaust", ["rank"]=2},
+    [0x0249]={["name"]="Resist Enervate", ["rank"]=2},
+    [0x024A]={["name"]="Resist Rage", ["rank"]=2},
+    [0x024B]={["name"]="Resist Dizzy", ["rank"]=2},
+    [0x024C]={["name"]="Resist Mute", ["rank"]=2},
+    [0x024D]={["name"]="HP Amp", ["rank"]=0},
+    [0x024E]={["name"]="SP Amp", ["rank"]=0},
+    [0x024F]={["name"]="Fast Healing", ["rank"]=3},
+    [0x0250]={["name"]="Insta-Heal", ["rank"]=7},
+    [0x0251]={["name"]="Infinite Endure", ["rank"]=0},
+    [0x0252]={["name"]="Izanami Endure", ["rank"]=0},
+    [0x0253]={["name"]="Alienation Wall", ["rank"]=0},
 }
 
 rng_seed_start_ptr = 0x21E9E530
@@ -601,31 +590,31 @@ function init_rng()
     total_rng_calls = 0
     rng[0] = 0x9A319039
 
-	for i=1,0x1E do
-		seed = (rng[i - 1] * 0x41C64E6D + 0x3039) &amp; 0xFFFFFFFF
-		rng[i] = seed
-	end
-	
-	rng_index_1 = 3
+    for i=1,0x1E do
+        seed = (rng[i - 1] * 0x41C64E6D + 0x3039) &amp; 0xFFFFFFFF
+        rng[i] = seed
+    end
+
+    rng_index_1 = 3
     rng_index_2 = 0
-	for i=0,0x135 do
-		seed = (rng[rng_index_1] + rng[rng_index_2]) &amp; 0xFFFFFFFF
-		rng[rng_index_1] = seed
-		
-		rng_index_1 = (rng_index_1 + 1) % 0x1F
-		rng_index_2 = (rng_index_2 + 1) % 0x1F
-	end
+    for i=0,0x135 do
+        seed = (rng[rng_index_1] + rng[rng_index_2]) &amp; 0xFFFFFFFF
+        rng[rng_index_1] = seed
+
+        rng_index_1 = (rng_index_1 + 1) % 0x1F
+        rng_index_2 = (rng_index_2 + 1) % 0x1F
+    end
 end
 
 function call_rng()
     seed = (rng[rng_index_1] + rng[rng_index_2]) &amp; 0xFFFFFFFF
     rng[rng_index_1] = seed
 
-	rng_index_1 = (rng_index_1 + 1) % 0x1F
-	rng_index_2 = (rng_index_2 + 1) % 0x1F
+    rng_index_1 = (rng_index_1 + 1) % 0x1F
+    rng_index_2 = (rng_index_2 + 1) % 0x1F
 
-	seed = seed &gt;&gt; 1
-	return seed &amp; 0x7FFFFFFF
+    seed = seed &gt;&gt; 1
+    return seed &amp; 0x7FFFFFFF
 end
 
 function get_number(seed, max_num)
@@ -639,16 +628,15 @@ function update_rng(max_count)
     end
     current_seed = readInteger(readInteger(rng_seed1_ptr))
     if current_seed == nil then
-       return
+        return
     end
     count = 0
     while rng[rng_index_1] ~= current_seed do
         call_rng()
         count = count + 1
         if count &gt; max_count then
-           print("test")
-           init_rng()
-           return update_rng(total_rng_calls + max_count)
+            init_rng()
+            return update_rng(total_rng_calls + max_count)
         end
     end
     total_rng_calls = total_rng_calls + count
@@ -702,34 +690,34 @@ end
 function update_hud()
     current_seed = readInteger(readInteger(rng_seed1_ptr))
     if current_seed ~= last_seed then
-      update_rng()
-      persona_skills = get_persona_skills()
+        update_rng()
+        persona_skills = get_persona_skills()
 
-      if #persona_skills &gt; 0 then
-         ptr1 = readInteger(rng_seed1_ptr)
-         ptr2 = readInteger(rng_seed2_ptr)
-         slot_seed = ((readInteger(ptr1) + readInteger(ptr2)) &amp; 0xFFFFFFFF) &gt;&gt; 1
+        if #persona_skills &gt; 0 then
+            ptr1 = readInteger(rng_seed1_ptr)
+            ptr2 = readInteger(rng_seed2_ptr)
+            slot_seed = ((readInteger(ptr1) + readInteger(ptr2)) &amp; 0xFFFFFFFF) &gt;&gt; 1
 
-         ptr1 = readInteger(rng_seed1_ptr) + 4
-         if ptr1 &gt;= readInteger(rng_seed_end_ptr) then
-            ptr1 = readInteger(rng_seed_start_ptr)
-         end
-         ptr2 = readInteger(rng_seed2_ptr) + 4
-         if ptr2 &gt;= readInteger(rng_seed_end_ptr) then
-            ptr2 = readInteger(rng_seed_start_ptr)
-         end
-         skill_seed = ((readInteger(ptr1) + readInteger(ptr2)) &amp; 0xFFFFFFFF) &gt;&gt; 1
+            ptr1 = readInteger(rng_seed1_ptr) + 4
+            if ptr1 &gt;= readInteger(rng_seed_end_ptr) then
+                ptr1 = readInteger(rng_seed_start_ptr)
+            end
+            ptr2 = readInteger(rng_seed2_ptr) + 4
+            if ptr2 &gt;= readInteger(rng_seed_end_ptr) then
+                ptr2 = readInteger(rng_seed_start_ptr)
+            end
+            skill_seed = ((readInteger(ptr1) + readInteger(ptr2)) &amp; 0xFFFFFFFF) &gt;&gt; 1
 
-         slot = get_number(slot_seed, #persona_skills) + 1
-         skills_by_rank = get_skills_by_rank(slot, persona_skills)
-         skill_change = get_number(skill_seed, #skills_by_rank) + 1
+            slot = get_number(slot_seed, #persona_skills) + 1
+            skills_by_rank = get_skills_by_rank(slot, persona_skills)
+            skill_change = get_number(skill_seed, #skills_by_rank) + 1
 
-         ManipForm.Slot_box.text = persona_skills[slot].name
-         ManipForm.Skill_box.text = skills_by_rank[skill_change].name
-      else
-         ManipForm.Slot_box.text = ""
-         ManipForm.Skill_box.text = ""
-      end
+            ManipForm.Slot_box.text = persona_skills[slot].name
+            ManipForm.Skill_box.text = skills_by_rank[skill_change].name
+        else
+            ManipForm.Slot_box.text = ""
+            ManipForm.Skill_box.text = ""
+        end
     end
     last_seed = current_seed
     ManipForm.Index_box.text = total_rng_calls
@@ -763,7 +751,7 @@ end
 
 function FormClose(sender)
     if update_timer ~= nil then
-       update_timer.destroy()
+        update_timer.destroy()
     end
     ManipForm.hide()
 end
