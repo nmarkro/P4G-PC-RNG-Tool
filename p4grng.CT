@@ -14,9 +14,10 @@
         <CheatEntry>
           <ID>6</ID>
           <Description>"RNG1 Seed 1"</Description>
+          <LastState Value="985EDBCA" RealAddress="34CA146C"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
-          <Address>21e9e534</Address>
+          <Address>P4G.exe+21A6B534</Address>
           <Offsets>
             <Offset>0</Offset>
           </Offsets>
@@ -24,9 +25,10 @@
         <CheatEntry>
           <ID>7</ID>
           <Description>"RNG1 Seed 2"</Description>
+          <LastState Value="0B4E80C9" RealAddress="34CA1460"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
-          <Address>21e9e538</Address>
+          <Address>P4G.exe+21A6B538</Address>
           <Offsets>
             <Offset>0</Offset>
           </Offsets>
@@ -43,19 +45,18 @@
         <CheatEntry>
           <ID>11</ID>
           <Description>"RNG2 Index"</Description>
+          <LastState Value="00000270" RealAddress="05E62180"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
-          <Address>"P4G.exe"+5a95180</Address>
+          <Address>"P4G.exe"+5a62180</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>13</ID>
+          <ID>25</ID>
           <Description>"RNG2 Seed"</Description>
+          <LastState Value="9E98C142" RealAddress="00C232A0"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
-          <Address>05e95180</Address>
-          <Offsets>
-            <Offset>c56030</Offset>
-          </Offsets>
+          <Address>P4G.exe + 00823030 + [(RNG2 Index)]</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -69,8 +70,9 @@
         <CheatEntry>
           <ID>15</ID>
           <Description>"Game Time"</Description>
+          <LastState Value="0" RealAddress="21E95C84"/>
           <VariableType>4 Bytes</VariableType>
-          <Address>P4G.exe+21AC8C84</Address>
+          <Address>P4G.exe+21A95C84</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>8</ID>
@@ -82,43 +84,48 @@
             <CheatEntry>
               <ID>1</ID>
               <Description>"Start RNG array PTR"</Description>
+              <LastState Value="34CA1460" RealAddress="21E6B530"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
-              <Address>21E9E530</Address>
+              <Address>P4G.exe+21A6B530</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>2</ID>
               <Description>"RNG index 1 PTR"</Description>
+              <LastState Value="34CA146C" RealAddress="21E6B534"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
-              <Address>21E9E534</Address>
+              <Address>P4G.exe+21A6B534</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>3</ID>
               <Description>"RNG index 2 PTR"</Description>
+              <LastState Value="34CA1460" RealAddress="21E6B538"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
-              <Address>21E9E538</Address>
+              <Address>P4G.exe+21A6B538</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>4</ID>
               <Description>"End RNG array PTR"</Description>
+              <LastState Value="34CA14DC" RealAddress="21E6B53C"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
-              <Address>21E9E53C</Address>
+              <Address>P4G.exe+21A6B53C</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>10</ID>
               <Description>"Start RNG2 Array"</Description>
+              <LastState Value="9A319039" RealAddress="00C23030"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4G.exe+856030</Address>
+              <Address>P4G.exe + 00823030</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>24</ID>
               <Description>"Start of skill array"</Description>
               <VariableType>2 Bytes</VariableType>
-              <Address>"P4G.exe"+04A34210</Address>
+              <Address>"P4G.exe"+ 04A0120c</Address>
               <Offsets>
                 <Offset>C</Offset>
                 <Offset>0</Offset>
